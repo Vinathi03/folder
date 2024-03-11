@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,intial-scale=1.0">
+        <title>File Upload</title>
+        <link rel="stylesheet" href="upload.css">
+
+</head>
+<body>
+        <h2>Upload a File</h2>
+{{message}}
+            <form action="/pdf_search" method="post" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <label for="keyword"><b>Keyword:</b>{{keyword}}</label>
+                <input type="text" id="keyword" placeholder="Enter Keyword" name="keyword" class="input" required>
+                <input type="submit" value="submit">
+                <div>message</div>
+            </form>
+            <script src="http://localhost:8000/static/upload.js"></script>
+
+    </body>
+    </html>
